@@ -39,7 +39,8 @@ class Unit {
         void equip(Equipment *);
 };
 
-Equipment::Equipment(int h, int a, int d) : hpmax(h), atk(a), def(d) {};
+Equipment::Equipment(int h, int a, int d) : hpmax(h), atk(a), def(d) {
+}
 
 vector <int> Equipment::getStat() {
     vector<int> stats = {hpmax, atk, def};
